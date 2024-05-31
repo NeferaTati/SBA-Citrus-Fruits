@@ -6,7 +6,7 @@ body {
     margin: 0px;
     display: grid;
     grid-template-rows: 3rem auto;
-    color: rgba(0, 0, 0, 0.829);
+    color: rgba(30, 19, 92, 0.829);
     background-image: url("https://res.cloudinary.com/dvvin6oes/image/upload/v1717095285/vecteezy_generative-ai-harvested-symmetry_30459214_fbyxrp.jpg");
     background-size: cover;
     background-repeat: no-repeat;
