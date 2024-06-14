@@ -1,3 +1,4 @@
+window.alert('welcome')
 
 const imageUrls = [
     'https://res.cloudinary.com/dvvin6oes/image/upload/v1717097964/bruna-branco-7r1HxvVC7AY-unsplash_pkdefu.jpg',
@@ -20,7 +21,7 @@ function getRandImage() {
 /// i made a button for the gifs because i cant click on them with out got to gif webside
 document.querySelectorAll('.showInfoButton').forEach(button => {
     button.addEventListener('click', function() {
-        let  infoDiv = this.nextElementSibling;
+        let  infoDiv = this.nextElementSibling ;
         if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
            
              infoDiv.style.display = 'block';
@@ -29,4 +30,16 @@ document.querySelectorAll('.showInfoButton').forEach(button => {
         }
     });
 });
+
+
+const form = document.getElementById('fruit-form')
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const heading = document.createElement('h1');
+    const output = document.getElementById("form-output");
+    
+    heading.innerHTML = `Your favorite fruit is ${event.target[0].value}`
+    output.append(heading)
+})
 
